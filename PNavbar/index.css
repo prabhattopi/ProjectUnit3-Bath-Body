@@ -6,15 +6,30 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-#navleft{
+.conta #navleft{
+  visibility: visible;
+
   display:flex;
   justify-content:flex-end ;
-  align-items: center;
+  align-items:flex-end;
   /* border: 2px solid red; */
-  background-color: #f2f2f2;
- padding-right: 80px;
+  /* background-color: #f2f2f2; */
+ /* padding-right: 80px; */
  gap: 10px;
- height: 42px;
+ /* top: 45px; */
+ /* top: 0; */
+ /* height: 42px; */
+ z-index:100;
+
+ font-size: 15px;
+ text-align: right;
+}
+.conta #navleft a{
+  margin-left: 4px;
+  text-decoration: underline;
+  font-size: 13px;
+  margin-right: 20px;
+
 }
 #homepageimg img
 {
@@ -78,10 +93,10 @@
   /* primary nav styling  */
   nav {
     position: fixed;
-    top: 0;
+    top: 70px;
     width: 100%;
     height: fit-content;
-    z-index: 999999;
+    z-index: -1;
     background-color: #fff;
     user-select: none;
   }
@@ -91,6 +106,7 @@
     box-shadow: 2px 0 4px 0 rgb(0 0 0 / 50%);
     background: rgba(255, 255, 255, 0.95);
     display: none;
+    margin-top: 10px;
   }
   
   nav > .mobile_navbar > .nav_container {
@@ -111,12 +127,12 @@
   
   nav > .mobile_menu {
     position: absolute;
-    top: 0;
+    top: 100px;
     left: -150%;
     height: 100vh;
     width: 100%;
     background-color: #fff;
-    z-index: 500;
+    z-index: 999;
     transition: 0.5s ease;
     overflow: auto;
   }
@@ -442,9 +458,9 @@
   }
   
   /* cart area styling  */
-  .cart_area {
+  /* .cart_area {
     position: absolute;
-    top: 0;
+    top:1000px;
     right: -150%;
     height: 100vh;
     width: 390px;
@@ -452,17 +468,17 @@
     box-shadow: 0 2px 4px 0 rgb(0 0 0 / 50%);
     transition: 0.5s ease;
     z-index: 997;
-    overflow: auto;
-  }
+    overflow: auto; */
   
-  .cart_active {
+  
+  /* .cart_active {
     right: 0;
-  }
+  } */
   
-  .cart_area > .cart_box {
+  /* .cart_area > .cart_box {
     height: 100%;
     position: relative;
-  }
+  } */
   
   .cart_area > .cart_box > .cart_nav {
     width: 100%;
@@ -668,26 +684,33 @@
  
 
   .secondary_nav > div > .dropDown {
+    scroll-behavior: smooth;
     display: flex;
     position: absolute;
-    top: 80%;
+     
+    top: 85%;
     left: 0;
     background: rgba(255, 255, 255, 0.95);
     box-shadow: 0 2px 4px 0 rgb(0 0 0 / 25%);
     padding: 40px;
-    /* height: 100%; */
-    justify-content: flex-start;
-    /* padding: 2rem; */
-    width: 100%;
+    /*height: 100%;
+    */justify-content: flex-start;
+    /*padding: 2rem;
+    */width: 100%;
     opacity: 0;
     pointer-events: none;
     transform: translateY(-40px);
-    /* transition: all 0.3s ease; */
-    /* flex-wrap: wrap; */
-    /* flex-direction: column;
-    overflow: hidden; */
-    /* margin-top: -12px; */
-  }
+    /*transition: all 0.3s ease;
+    *//*flex-wrap: wrap;
+    *//*flex-direction: column;
+    overflow: hidden;
+    *//*margin-top: -12px;
+    */-webkit-transform: translateY(-50px);
+    -moz-transform: translateY(-40px);
+    -ms-transform: translateY(-40px);
+    -o-transform: translateY(-40px);
+    -webkit-transform: translateY(-40px);
+}
   
   .secondary_nav > .drop:hover .dropDown {
     opacity: 1;
@@ -799,7 +822,7 @@
     width: 0%;
     height: 4px;
     background-color: rgb(11, 180, 223);
-    bottom: -110%;
+    bottom: -70%;
     left: 0;
     transition: width 0.2s linear;
   }
@@ -817,6 +840,7 @@
   } */
   .secondary_nav > div:hover a::after{
     width: 100%;
+   
   }
   
   /* footer styling  */
@@ -1229,4 +1253,57 @@
       justify-content: flex-start;
     }
     
+  }
+
+  @media all and (min-width:1118px) and (max-width:1496px) {
+    .search input{
+ 
+      position:absolute;
+      outline: none;
+      width: 80%;
+      height: 40px;
+      padding: 0.8rem 0.5rem;
+      border: none;
+      border: 1px solid black;
+       margin-left: 0;
+      /* border-right: none; */
+    
+      
+    
+    }
+    
+  }
+
+  @media all and (min-width:1298px) and (max-width:1496px){
+    .search input{
+ 
+      position:absolute;
+      outline: none;
+      width: 80%;
+      height: 40px;
+      padding: 0.8rem 0.5rem;
+      border: none;
+      border: 1px solid black;
+       margin-left:0;
+      /* border-right: none; */
+    
+      
+    
+    }
+     .search span{
+      /* position:f; */
+      /* display: none; */
+      margin-left: 13rem;
+      font-size: 18px;
+      color: rgb(12, 136, 238);
+   
+    }
+    .links{
+      margin-left: -1rem;
+      justify-content: flex-start;
+      
+    }
+    
+    
+
   }
