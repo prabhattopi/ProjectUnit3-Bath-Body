@@ -1,6 +1,6 @@
 let mensData = JSON.parse(localStorage.getItem("mens"))
 
- console.log(mensData)
+ //console.log(mensData)
 
 
 
@@ -12,6 +12,9 @@ let mensData = JSON.parse(localStorage.getItem("mens"))
 
     let div = document.createElement("div");
     div.id="divshr"
+    div.addEventListener("click",function(){
+        adddetails(el)
+    })
 
     let image = document.createElement("img");
     image.src = el.image ;
@@ -49,3 +52,15 @@ let mensData = JSON.parse(localStorage.getItem("mens"))
     document.getElementById("productshra").append(div) ;
 
  })
+
+
+
+ 
+
+function adddetails(el){
+    let details = []
+    details.push(el)
+    localStorage.setItem("product_det",JSON.stringify(details))
+    window.location.href="./product_details/product_details.html"
+    //console.log(details)
+}
