@@ -1,0 +1,12 @@
+#mainshr{
+    display: grid;
+    border: 1px solid black;
+    width: 60%;
+    height: 600px;
+    margin: auto;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+#mainshr>DIV{
+    border: 1px solid saddlebrown;
+}
