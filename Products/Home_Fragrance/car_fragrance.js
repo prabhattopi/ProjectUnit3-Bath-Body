@@ -163,11 +163,13 @@ var carFragrance = [
     var cartData = JSON.parse(localStorage.getItem("cart")) || [];
     
     
-    
-    DisplayData(carFragrance);
+    // window.addEventListener("load",function(){
+    //    
+    // })
+
     
     function DisplayData(carFragrance){
-        document.querySelector("#container").innerHTML= "";
+        // document.querySelector("#container").innerHTML= "";
       
       
       
@@ -220,7 +222,8 @@ var carFragrance = [
           document.querySelector("#container").append(box);
       })
     
-    
+    }
+    DisplayData(carFragrance);
     
       function addToCart(elem){
         console.log(elem);
@@ -228,4 +231,4 @@ var carFragrance = [
         localStorage.setItem("cart", JSON.stringify(cartData));
         alert("item added to cart")
     }
-    }
+   

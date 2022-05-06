@@ -8,9 +8,24 @@ var length = cartData.length;
 
 console.log(total)
 
-document.querySelector("h2").innerText ="You Have    "+length+"    Item In The Cart and"+"Total is Rs     "+ total;
+document.querySelector("h2").innerText ="You Have    "+length+"    Item In The Cart and"+"Total is Rs     "+ total.toFixed(2);
+
+function fo(cartData){
+    document.querySelector(".high").innerText=null
+    let otal = cartData.reduce(function(sum,elem,index,arr){
+        return sum+Number(elem.price)
+    },0)
+
+ let ength=cartData.length
+    document.querySelector("h2").innerText ="You Have    "+ength+"    Item In The Cart and"+"Total is Rs     "+ otal.toFixed(2);
+}
 
 
+window.addEventListener("load",()=>{
+    fa(cartData)
+ 
+})
+function fa(cartData){
 document.querySelector("#container").innerHTML=null
 cartData.map(function(elem,index){
 
@@ -57,12 +72,17 @@ cartData.map(function(elem,index){
 
     document.querySelector("#container").append(box);
 });
+}
 
 
 function removeItem(elem,index){
     cartData.splice(index,1);
+   
 
     console.log(cartData);
     localStorage.setItem("cart",JSON.stringify(cartData))
-    window.location.reload()
+    document.querySelector("#container").innerHTML=null
+    fa(cartData)
+    fo(cartData)
+    
 }
