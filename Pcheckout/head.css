@@ -176,3 +176,87 @@
     display: block;
     color: white;
 }
+
+.heart{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 20vh;
+  background-color: white;
+  overflow: hidden;
+  color:rgb(214, 69, 151); ;
+  /* position: absolute; */
+   
+
+}
+.heart>div{
+    height: 100px;
+    width: 100px;
+    border: 3px solid white;
+    border-top-color: rgb(214, 69, 151);
+    position: relative;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    animation:spin 1.5s linear infinite ;
+    -webkit-animation:spin 1.5s linear infinite ;
+}
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+}
+100%{
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+    
+}
+
+
+/* .heart .fa-circle{
+    position: relative;
+    font-size: 80px;
+    z-index: -1;
+    animation: rotate 3s linear infinite;
+    -webkit-animation: rotate 3s linear infinite;
+    transition: 0.4s ease-in-out;
+    -webkit-transition: 0.4s ease-in-out;
+    -moz-transition: 0.4s ease-in-out;
+    -ms-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+}
+@keyframes rotate {
+    0%{
+        color: blue;
+        transform: translate(0deg);
+        -webkit-transform: translate(0deg);
+        -moz-transform: translate(0deg);
+        -ms-transform: translate(0deg);
+        -o-transform: translate(0deg);
+      
+}
+100%{
+    transform: translate(360deg);
+    -webkit-transform: translate(360deg);
+    -moz-transform: translate(360deg);
+    -ms-transform: translate(360deg);
+    -o-transform: translate(360deg);
+}
+    
+} */
+.heart .fa-heart{
+    font-size: 20px;
+    position: absolute;
+    margin-right:0.2rem ;
+} 
+
+
