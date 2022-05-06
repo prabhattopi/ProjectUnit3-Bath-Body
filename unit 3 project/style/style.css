@@ -8,6 +8,14 @@
    
     
 } */
+#navi{
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+}
 .c{
     top: 0;
 

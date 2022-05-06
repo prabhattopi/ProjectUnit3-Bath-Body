@@ -1,7 +1,8 @@
 const navbar=()=>{
     return ` 
    
-    
+   
+
    <div class="c">
     <!-- Primary nav bar -->
      <div class="conta">
@@ -573,6 +574,7 @@ const navbar=()=>{
         
     </nav>
     </div>
+   
     `
 }
 

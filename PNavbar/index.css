@@ -110,7 +110,12 @@
     z-index: -1;
     background-color: #fff;
     user-select: none;
-  }
+    transition: top 0.4s;
+    -webkit-transition: top 0.4s;
+    -moz-transition: top 0.4s;
+    -ms-transition: top 0.4s;
+    -o-transition: top 0.4s;
+}
   
   nav > .mobile_navbar {
     padding: 20px;
