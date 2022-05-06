@@ -5,7 +5,7 @@ const navbar=()=>{
    
     <!-- Primary nav bar -->
      <div class="conta">
-      <div><a href="" ><img style="height:45px;" width="100%" src="./img/Screenshot 2022-05-02 223513.png" alt=""></a></div>
+      <div><a href="" ><img style="height:45px;" width="100%" src="../Images/Screenshot 2022-05-02 223513.png" alt=""></a></div>
       <div id="navleft">
           <i style="font-size: 20px; color: rgb(228, 100, 179);" class="fa-solid fa-location-dot"></i>
           <h4 style="letter-spacing: 2px; color:#006bab;">PICK UP IN STORE</h4>
@@ -22,7 +22,7 @@ const navbar=()=>{
           </div>
           <a href="./index.html"
             ><img
-              src="Logos-main.png"
+              src="../Images/Logos-main.png"
               alt="Bath & Body"
           /></a>
           <div class="links">
@@ -62,13 +62,13 @@ const navbar=()=>{
         <!-- <h4></h4> -->
         <a href="./index.html"
           ><img class="Pimage"
-            src="Logos-main.png"
+            src="../Images/Logos-main.png"
            
         /></a>
         <div class="links">
           
           <div class="search"><input type="text" placeholder="Search"> <span><i class="fa-solid fa-magnifying-glass"></i></span></div>
-          <div class="sign_in"><img src="photo.png" alt=""></div>
+          <div class="sign_in"><img src="../Images/photo.png" alt=""></div>
           <div class="signInForm hide">
             <form id="sign_in">
               <label for="email">Email</label> <br />
