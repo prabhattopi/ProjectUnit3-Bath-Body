@@ -36,6 +36,12 @@ z-index: 1500;
     height: 657px;
 }
 /* ---------------------------slider--------------- */
+#navhomepage{
+    z-index: 100000;
+}
+.slider{
+    z-index: 1;
+}
 #homepageslidermain
 {
     /* border: 2px solid red; */
@@ -121,21 +127,29 @@ background-color:rgb(216, 212, 212);
 }
 .flexhomepageslidermain{
     width: 80%;
-  
+     height: 290px;
     margin: auto;
     display: flex;
+    /* border: 2px solid lime; */
    
     
    
 }
+.flexhomepageslidermain div{
+     height: 100%;
+ 
+}
+
+   
 
 
 
 .flexhomepageslidermaindivcommon{
 /* border: 2px solid red; */
 margin-left: 15px;
-height: 300px;
+
 background-color: white;
+
 }
 
 .flexhomepageslidermaindiv1 h3:first-child{
@@ -196,7 +210,8 @@ background-color: white;
 .flexhomepageslidermaindiv2 button
 {
     display: block;margin: auto;
-    margin-top:15px ;
+    margin-top:10px ;
+    margin-bottom: 5px;
     width:76%;height: 50px;
     font-size: 17px;
     cursor: pointer;margin-bottom: 22px;
@@ -210,7 +225,7 @@ background-color: white;
 }
 .flexhomepageslidermaindiv3 h3{
     text-align: center;margin-top: 8px;
-    margin-bottom: 65px;
+    margin-bottom: 72px;
 
     font-size: 20px;
     color: #333333;
@@ -237,7 +252,7 @@ background-color: white;
 }
 .flexhomepageslidermaindiv4 h3{
     text-align: center;margin-top: 8px;
-    margin-bottom: 65px;
+    margin-bottom: 72px;
 
     font-size: 20px;
     color: #333333;
@@ -253,7 +268,7 @@ background-color: white;
     height: 50px;
     font-size: 17px;
     cursor: pointer;
-    margin-bottom: 22px;
+    /* margin-bottom: px; */
     background-color: #333333;
     border: none;
     color: whitesmoke;
@@ -301,7 +316,7 @@ background-color: white;
     font-family: "TradeGothicLTW05-Light","Arial", "sans-serif";
     color: #7e716b;
     font-size: 18px;
-    margin-bottom: 20px;
+    /* margin-bottom: px; */
 }
 #limitedtimehomepage button{
     display: block;
