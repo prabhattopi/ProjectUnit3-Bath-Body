@@ -6,6 +6,14 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+/* #navhomepage ::before{
+  top: 0;
+  width: 100%;
+  position: absolute;
+  z-index: 1100;
+  
+
+} */
 .conta #navleft{
   visibility: visible;
 
@@ -19,7 +27,10 @@
  /* top: 45px; */
  /* top: 0; */
  /* height: 42px; */
- z-index:100;
+ z-index:1000;
+ padding-bottom: 4px;
+ margin-top: -7px;
+ position: -webkit-sticky;
 
  font-size: 15px;
  text-align: right;
@@ -64,7 +75,7 @@
     transition: all 0.3s ease;
   }
   
-  .scroll-up-btn.show {
+ .scroll-up-btn.show {
     bottom: 70px;
     opacity: 1;
     pointer-events: auto;
