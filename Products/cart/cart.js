@@ -1,7 +1,7 @@
-var cartData = JSON.parse(localStorage.getItem("cart"));
+var cartData = JSON.parse(localStorage.getItem("cart"))||[];
 
 var total = cartData.reduce(function(sum,elem,index,arr){
-    return sum+elem.price
+    return sum+Number(elem.price)
 },0)
 
 var length = cartData.length;
@@ -11,8 +11,9 @@ console.log(total)
 document.querySelector("h2").innerText ="You Have    "+length+"    Item In The Cart and"+"Total is Rs     "+ total;
 
 
+document.querySelector("#container").innerHTML=null
+cartData.map(function(elem,index){
 
-cartData.map(function(elem){
   
     var box = document.createElement("div");
    
@@ -60,6 +61,7 @@ cartData.map(function(elem){
 
 function removeItem(elem,index){
     cartData.splice(index,1);
+
     console.log(cartData);
     localStorage.setItem("cart",JSON.stringify(cartData))
     window.location.reload()
