@@ -1,8 +1,8 @@
 const navbar=()=>{
-    return ` <div class="scroll-up-btn">UP</div>
+    return ` 
    
     
-   
+   <div class="c">
     <!-- Primary nav bar -->
      <div class="conta">
       <div><a href="" ><img style="height:45px;" width="100%" src="../Images/Screenshot 2022-05-02 223513.png" alt=""></a></div>
@@ -571,7 +571,9 @@ const navbar=()=>{
         
         </div>
         
-    </nav>`
+    </nav>
+    </div>
+    `
 }
 
 export {navbar};

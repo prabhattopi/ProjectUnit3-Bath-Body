@@ -3,10 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
-#navhomepage
+/* #navhomepage
 {
    
     
+} */
+.c{
+    top: 0;
+
+position: fixed;
+z-index: 1500;
 }
 #homepageimg
 {
@@ -17,7 +23,7 @@
 {
     display: block;
     margin: auto;
-    /* z-index: -1; */
+    z-index: -1;
     width: 75%;
     height: 657px;
 }
@@ -858,4 +864,11 @@ margin-bottom: 10px;
     height:310px;
     padding-top: 55px;
 
+}
+.homepageslidermain{
+    z-index: -1;
+}
+.homepageslidermain .flexhomepageslidermain .slider .flexhomepageslidermaindiv1 .flexhomepageslidermaindivcommon {
+    z-index: -1;
+    scroll-behavior: smooth;
 }
