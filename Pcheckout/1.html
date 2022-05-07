@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@700&family=Poppins:wght@100;200;300&family=Radio+Canada:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
    <div id="Thanos">
@@ -18,13 +21,237 @@
    <div class="falto">
        
    </div>
+
+
    <div class="heart">
       
     
-     <div></div>
-      
-       <i class="fa-solid fa-heart"></i>
+    <div></div>
+     
+      <i class="fa-solid fa-heart"></i>
+ 
+  </div>
+   
+   <div class="ironman">
+       <div class="ironman-2">
+       <div class="dropdown">
+          <input type="text" class="textBox" placeholder="SIGN IN FOR FASTER CHECKOUT" readonly>
+          <div class="option">
+              <div><span class="red">*</span>Email Addres</div>
+              <div><input id="email" type="email"  class="nabula"></div>
+              <div><span class="red">*</span>Password</div>
+              <div><input id="password" type="password" class="nabula"><span><button id="bat">Show</button ></span></div>
+              <div><a href=""><p>Forget Password?</p></a></div>
+              <div><button onclick="sent()">Signin</button><span><a href="">privacy Policy</a></span></div>
+              <div>DONT HAVE AN ACOOUNT?</div>
+            <div>you can easily create one after checout.</div>
+          </div>
+       </div>
+       <div class="ship">
+         <div class="h2">shipping Address</div>
+         <div class="first">
+           <div><span>*</span>First Name</div><p><span>*</span>Required</p> 
+           <div class="input">
+             <input id="name" type="text">
+           </div>
+         </div>
+         <div class="first">
+           <div><span>*</span>Last Name</div>
+           <div class="input">
+             <input id="last" type="text">
+           </div>
+         </div>
+         <div class="first">
+           <div><span>*</span>Addrress1
+           </div>
+           <div class="input">
+             <input id="address1" type="text">
+           </div>
+         </div>
+         <div class="first">
+           <div><span>*</span>Address2</div>
+           <div class="input">
+             <input id="address2" type="text">
+           </div>
+         </div>
+         <div class="first">
+           <div><span>*</span>Country</div>
+           <div class="input">
+            <select name="" id="country">
+           
+            <option value="">Country</option>
+            <option value="Canada">Canada</option>
+            <option value="U.S.A">UnitedStates</option>
+            <option value="Canada">Canada</option>
+            </select>
+           </div>
+         </div>
+         <div class="first">
+           <div><span>*</span>City</div>
+           <div class="input">
+             <input id="city" type="text">
+           </div>
+         </div>
+         <div class="first">
+           <div><span>*</span>State</div>
+           <div class="input">
+            <select name="" id="state">
+              <option value="">selectstate</option>
+              <option value="alaska">Alaska</option>
+              <option value="guwahati">Guwahati</option>
+              <option value="mysore">Mysore</option>
+              <option value="bangalore">Bangalore</option>
+              <option value="gujrat">Gujrat</option>
+              <option value="punjab">Punjab</option>
+              <option value="delhi">Delhi</option>
+              <option value="maharastra">Maharastra</option>
+              <option value="goa">Goa</option>
+              <option value="bihar">Bihar</option>
+            </select>
+           </div>
+         </div>
+         <div class="first">
+           <div><span>*</span>ZipCode</div>
+           <div class="input">
+             <input id="code" type="text">
+           </div>
+         </div>
+         <div class="first">
+           <div><span>*</span>Phone NUmber</div>
+           <div class="input">
+             <input id="no" type="number">
+           </div>
+         </div>
+         <div class="first">
+           <div></div>
+           <div class="input">
+             <input id="cheka" class="gal" type="checkbox">
+             <span class="check">Use Address for Billing</span>
+           </div>
+         </div>
+         <div class="first">
+           <div><span>*</span>Are you shiping a gift?</div>
+           <div class="input">
+             <input  class="radio" type="radio"
+             name="shipping">
+             <span class="checki" >Yes</span>
+             <input class="radio" type="radio" name="shipping">
+             <span class="checki">No</span>
+           </div>
+         </div>
+
   
+
+         <div>
+          <h2>Select Shipping Method:</h3>
+          <div id="method">
+              <div>
+                  <input type="radio" value="Ground (2-6 Business Day)" name="Shipping" id="vishal">Ground (2-6 Business Day)
+                  <p>$5.95</p>
+                
+              </div>
+              <hr>
+              <div>
+                  <input type="radio" value="2 Business Day" name="Shipping">2 Business Day
+                  <p>$5.95</p>
+              </div>
+              <hr>
+              <div>
+                  <input type="radio" value="1 Business Day" name="Shipping">1 Business Day
+                  <p>$5.95</p>
+              </div>
+            
+          </div>
+          <p class="sab">Plase complete all Form details to continue</p>
+          <button id="ballo">Go To Billing</button>
+          <span class="jao"><a href="/">Privacy Policy</a></span>
+      </div>
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       </div>
+
+
+
+
+ 
+
+
+    </div>
+          
+
+
+
+
+    
+ 
+
+
+  
+   <div id="conta">
+       <h2>Your Order</h2>
+       <div id="container"></div>
+        <div class="sharki">
+          <div class="sharki2">
+            <div class="sharki3">
+       <div id="total">
+        <div>
+            <p>Merchandise Subtotal</p>
+            <p id="subtotal"></p>
+        </div>
+        <div>
+            <h6>ESTIMATED SHIPPING & HANDLING - Standard</h6>
+         
+        </div>
+        <div>
+            <p>SALES TAX</p>
+            <div class="p">
+              <p>Tax is estimated and will be calculated when your order is processed.</p>
+            </div>
+        </div>
+        <hr>
+       
+    </div>
+            </div>
+
+
+                 <div class="sharki4">
+                   <p class="1" id="tota">$ 34</p>
+                   <p class="2">$ 10.55</p>
+                   <p class="3">$ 1.55</p>
+                 </div>
+
+
+          </div>
+
+
+            
+            <div>
+            <h3>ORDER TOTAL(USD) </h3>
+            <p id="estimate">$ 40.55</p>
+           </div>
+   
+  
+       
+        </div>
+
+     
+          
+
+   </div>
    </div>
 
    
