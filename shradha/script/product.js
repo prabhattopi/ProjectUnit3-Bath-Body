@@ -3,24 +3,15 @@ import {navbar}  from "/components/navbar.js"
 
 let nav_container=document.getElementById("navbarshr")
 nav_container.innerHTML= navbar()
-console.log(navbar())
 
 
 
-let mensData = JSON.parse(localStorage.getItem("mens"))
-
- //console.log(mensData)
-
- let cart = JSON.parse(localStorage.getItem("cart")) || []
-
- 
 
 
- let conta = document.getElementById("productshra").innerHTML = ""
-
- let data =mensData .map((el,index)=>{
-
-
+const appendData =  (data1)=>{
+    let conta = document.getElementById("productshra").innerHTML = ""
+    data1.map((el)=>{
+        
     let div = document.createElement("div");
     div.id="divshr"
     
@@ -66,8 +57,42 @@ let mensData = JSON.parse(localStorage.getItem("mens"))
     ana.append(name,about,price,discount)
     div.append(image,ana,btn);
     document.getElementById("productshra").append(div) ;
+    })
+}
 
- })
+
+const getdata = ()=>{
+    let data = JSON.parse(localStorage.getItem("pages"));
+    console.log(data)
+    let data1 = data[data.length-1]
+    console.log(data1)
+    let dataa = JSON.parse(localStorage.getItem(`${data1}`))
+    // console.log(mensData)
+    appendData(dataa)
+}
+
+getdata()
+// console.log(navbar())
+
+
+
+
+
+
+
+
+
+
+ //console.log(mensData)
+
+ let cart = JSON.parse(localStorage.getItem("cart")) || []
+
+ 
+
+
+
+
+
 
 
 
@@ -89,8 +114,3 @@ function addtocart(el){
 
 
 
-let value = "";
-//abhi karu ya bad may krkr dikahu
-
-
-let productArr = JSON.parse(localStorage.getItem(`${value}`))

@@ -31,3 +31,6 @@ function len(cartData){
 window.addEventListener("load",function(){
     len(cartData)
 })
+
+
+

@@ -181,7 +181,7 @@ const navbar=()=>{
 
                     <ul>
                         <li><a href="./product.html">New Arrival</a></li>
-                        <li><a href="./product.html">Men's Shop</a></li>
+                        <li onclick="myFunction()"><a href="../shradha/product.html">Men's Shop</a></li>
                         <li><a href="./product.html">Laundary Frangrance</a></li>
                         <li><a href="./product.html">Best Seller</a></li>
                         <li><a href="./product.html">Aromatherapy Shops</a></li>
@@ -307,7 +307,7 @@ const navbar=()=>{
                 </li>
                 <li><a href="#">MEN'S</a> <span class="Picon"><i class="fa-solid fa-angle-right"></i></span>
                   <ul>
-                    <li><a href="./product.html">All Men's</a></li>
+                    <lionclick="myFunction()"><a href="../shradha/product.html">All Men's</a></lionclick=>
                     <li><a href="./product.html">Body Wash & Shower Gell</a></li>
                     <li><a href="./product.html">Moisturizer</a></li>
                     <li><a href="./product.html">Body Sparys & Colonge</a></li>
@@ -352,7 +352,7 @@ const navbar=()=>{
                   <span class="Picon"><i class="fa-solid fa-angle-right"></i></span>
                 </a>
                 <ul>
-                  <li><a href="./product.html">New Hand & Sanitizers</a></li>
+                  <li onclick = "handshoap() "><a href="../shradha/product.html">New Hand & Sanitizers</a></li>
                   <li><a href="./product.html">Gentel Soap & Clean</a></li>
                  
                  
@@ -365,7 +365,7 @@ const navbar=()=>{
                 <li><a href="#">HAND SANITIZERS</a> <span class="Picon"><i class="fa-solid fa-angle-right"></i></span>
                  
                   <ul>
-                    <li><a href="./product.html">All Hand Sanitizers</a></li>
+                    <li onclick = "sanitizer()"><a href="../shradha/product.html">All Hand Sanitizers</a></li>
                     <li><a href="./product.html">Pocket Bac Hand Sanitizers</a></li>
                     <li><a href="./product.html">Hands Sanitizers & Sprays
                     </a></li>
@@ -394,7 +394,7 @@ const navbar=()=>{
 
                 
                 </li>
-                <li><a href="#">EXPLORE HAND SOAPS & SANITIZERS</a> 
+                <li ><a href="#">EXPLORE HAND SOAPS & SANITIZERS</a> 
                 
                 </li>
                 
@@ -410,7 +410,7 @@ const navbar=()=>{
               <ul>
                 <li><a href="#">FEATURED</a><span class="Picon"><i class="fa-solid fa-angle-right"></i></span>
                   <ul>
-                    <li><a href="./product.html">New Home Frangrance </a></li>
+                    <li onclick = "homefrag()"><a href="../shradha/product.html">New Home Frangrance </a></li>
                     <li><a href="./product.html">The White Barn Shop</a></li>
                     <li><a href="./product.html">Auto Refresh Wallflowers</a></li>
             
@@ -442,7 +442,7 @@ const navbar=()=>{
                     <li><a href="./product.html">Wallflowers Plugs</a></li>
                     <li><a href="./product.html">Wallflowers Reffils</a></li>
                     <li><a href="./product.html">Alls sprays</a></li>
-                    <li><a href="./product.html">Car Frangrance</a></li>
+                    <li onclick = "carfarg()"><a href="../shradha/product.html">Car Frangrance</a></li>
             
                    
                    
@@ -471,7 +471,7 @@ const navbar=()=>{
                     <li><a href="./product.html">Wallflowers Plugs</a></li>
                     <li><a href="./product.html">Wallflowers Reffils</a></li>
                     <li><a href="./product.html">Alls sprays</a></li>
-                    <li><a href="./product.html">Car Frangrance</a></li>
+                    <lionclick = "carfarg()"><a href="../shradha/product.html>Car Frangrance</a></lionclick>
             
                    
                    
@@ -488,7 +488,7 @@ const navbar=()=>{
                     <li><a href="./product.html">Wallflowers Plugs</a></li>
                     <li><a href="./product.html">Wallflowers Reffils</a></li>
                     <li><a href="./product.html">Alls sprays</a></li>
-                    <li><a href="./product.html">Car Frangrance</a></li>
+                    <lionclick = "carfarg()"><a href="../shradha/product.html</a></lionclick>
             
                    
                    
@@ -504,7 +504,7 @@ const navbar=()=>{
                     <li><a href="./product.html">Wallflowers Plugs</a></li>
                     <li><a href="./product.html">Wallflowers Reffils</a></li>
                     <li><a href="./product.html">Alls sprays</a></li>
-                    <li><a href="./product.html">Car Frangrance</a></li>
+                    <lionclick = "carfarg()"><a href="../shradha/product.html</a></lionclick>
             
                    
                    
@@ -520,7 +520,7 @@ const navbar=()=>{
                     <li><a href="./product.html">Wallflowers Plugs</a></li>
                     <li><a href="./product.html">Wallflowers Reffils</a></li>
                     <li><a href="./product.html">Alls sprays</a></li>
-                    <li><a href="./product.html">Car Frangrance</a></li>
+                    <lionclick = "carfarg()"><a href="../shradha/product.html</a></lionclick>
             
                    
                    
