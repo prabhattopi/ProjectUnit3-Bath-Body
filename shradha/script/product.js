@@ -1,3 +1,11 @@
+
+// import { navbar } from "../shradha/components/navbar.js";
+
+// let nav_container=document.getElementById("navb")
+// nav_container.innerHTML=navbar()
+
+
+
 let mensData = JSON.parse(localStorage.getItem("mens"))
 
  //console.log(mensData)
