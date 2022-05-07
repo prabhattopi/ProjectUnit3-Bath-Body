@@ -1,8 +1,9 @@
 
-// import { navbar } from "../shradha/components/navbar.js";
+import {navbar}  from "/components/navbar.js"
 
-// let nav_container=document.getElementById("navb")
-// nav_container.innerHTML=navbar()
+let nav_container=document.getElementById("navbarshr")
+nav_container.innerHTML= navbar()
+console.log(navbar())
 
 
 
@@ -12,12 +13,12 @@ let mensData = JSON.parse(localStorage.getItem("mens"))
 
  let cart = JSON.parse(localStorage.getItem("cart")) || []
 
-
+ 
 
 
  let conta = document.getElementById("productshra").innerHTML = ""
 
- let data = mensData.map((el,index)=>{
+ let data =mensData .map((el,index)=>{
 
 
     let div = document.createElement("div");
@@ -31,7 +32,8 @@ let mensData = JSON.parse(localStorage.getItem("mens"))
     })
 
     let ana = document.createElement("div");
-    ana.id = "anna"
+    ana.id = "anna";
+    ana.style.lineHeight="25px"
 
     let name = document.createElement("h3");
     name.innerText = el.name ;
@@ -84,3 +86,11 @@ function addtocart(el){
     console.log(cart)
 
 }
+
+
+
+let value = "";
+//abhi karu ya bad may krkr dikahu
+
+
+let productArr = JSON.parse(localStorage.getItem(`${value}`))

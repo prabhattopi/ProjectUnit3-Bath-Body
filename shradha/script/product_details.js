@@ -1,4 +1,9 @@
 
+import {navbar}  from "/components/navbar.js"
+
+let nav_container=document.getElementById("navbarshr")
+nav_container.innerHTML= navbar()
+// console.log(navbar())
 
 let product = JSON.parse(localStorage.getItem("product_det"))
 console.log(product)

@@ -578,4 +578,4 @@ const navbar=()=>{
     `
 }
 
-export {navbar};
+export  {navbar} ;
