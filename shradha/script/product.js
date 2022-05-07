@@ -1,13 +1,39 @@
 
-import {navbar}  from "/components/navbar.js"
+import {navbar}  from "../../components/navbar.js"
 
-let nav_container=document.getElementById("navbarshr")
+
+
+
+
+
+
+let na=document.querySelector("nav")
+let scrollPrevious=window.pageYOffset;
+window.onscroll=function(){
+    let scrollCurrent=window.pageYOffset;
+    if(scrollPrevious>scrollCurrent){
+        na.style.top="50px";
+
+    }
+    else{
+        na.style.top="-90px"
+    }
+    scrollPrevious=scrollCurrent
+}
+
+
+
+
+
+
+
+let nav_container=document.getElementById("navhomepage")
 nav_container.innerHTML= navbar()
 console.log(navbar())
 
 
 
-let mensData = JSON.parse(localStorage.getItem("mens"))
+let mensData = JSON.parse(localStorage.getItem("mefns"))
 
  //console.log(mensData)
 
@@ -94,3 +120,6 @@ let value = "";
 
 
 let productArr = JSON.parse(localStorage.getItem(`${value}`))
+
+
+
