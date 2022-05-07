@@ -1,23 +1,15 @@
 
-import {navbar}  from "/components/navbar.js"
+import {navbar}  from "../components/navbar.js"
 
-let nav_container=document.getElementById("navbarshr")
+let nav_container=document.getElementById("navhomepage")
 nav_container.innerHTML= navbar()
 
-let dataArr = JSON.parse(localStorage.getItem("pages")) || [] 
-
-function myFunction() {
-    dataArr.push("mens")
-    console.log(dataArr)
-   localStorage.setItem("pages",JSON.stringify(dataArr))
-   
-}
 
 
 
-const appendData =  (data1)=>{
+const appendData =  (dataa)=>{
     let conta = document.getElementById("productshra").innerHTML = ""
-    data1.map((el)=>{
+    dataa.map((el)=>{
         
     let div = document.createElement("div");
     div.id="divshr"
