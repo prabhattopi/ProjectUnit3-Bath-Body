@@ -1,15 +1,16 @@
 
-import {navbar}  from "../components/navbar.js"
+// import {navbar}  from "../components/navbar.js"
 
-let nav_container=document.getElementById("navhomepage")
-nav_container.innerHTML= navbar()
+// let nav_container=document.getElementById("navhomepage")
+// nav_container.innerHTML= navbar()
+
+// let app = JSON.parse(localStorage.getItem("pages"))
+// console.log(app)
 
 
-
-
-const appendData =  (dataa)=>{
+const appendData =  (data1)=>{
     let conta = document.getElementById("productshra").innerHTML = ""
-    dataa.map((el)=>{
+    data1.map((el)=>{
         
     let div = document.createElement("div");
     div.id="divshr"
@@ -60,6 +61,8 @@ const appendData =  (dataa)=>{
 }
 
 
+
+
 const getdata = ()=>{
     let data = JSON.parse(localStorage.getItem("pages"));
     console.log(data)
@@ -69,7 +72,6 @@ const getdata = ()=>{
     // console.log(mensData)
     appendData(dataa)
 }
-
 getdata()
 // console.log(navbar())
 
