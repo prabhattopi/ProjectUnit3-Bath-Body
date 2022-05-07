@@ -51,7 +51,7 @@ function setToLS(info){
 
     localStorage.setItem("user", JSON.stringify(userDetails))
 
-    window.location.href="../PNavbar/index.html"
+    window.location.href="../index.html"
 }
 
 document.getElementById("createAccount").addEventListener("click", function(){
