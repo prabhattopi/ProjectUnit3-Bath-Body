@@ -1,11 +1,49 @@
 
-import {navbar}  from "/components/navbar.js"
+import {navbar}  from "../../components/navbar.js"
 
-let nav_container=document.getElementById("navbarshr")
+
+
+
+
+
+
+// let na=document.querySelector("nav")
+// let scrollPrevious=window.pageYOffset;
+// window.onscroll=function(){
+//     let scrollCurrent=window.pageYOffset;
+//     if(scrollPrevious>scrollCurrent){
+//         na.style.top="50px";
+
+//     }
+//     else{
+//         na.style.top="-90px"
+//     }
+//     scrollPrevious=scrollCurrent
+// }
+
+
+
+
+
+
+
+let nav_container=document.getElementById("navhomepage")
 nav_container.innerHTML= navbar()
 
 
 
+
+
+ //console.log(mensData)
+
+ let cart = JSON.parse(localStorage.getItem("cart")) || []
+
+ 
+
+
+ let conta = document.getElementById("productshra").innerHTML = ""
+
+ let data =mensData .map((el,index)=>{
 
 
 const appendData =  (data1)=>{
@@ -111,6 +149,7 @@ function addtocart(el){
     console.log(cart)
 
 }
+
 
 
 
