@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;400&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/login.css">
+    <link rel="stylesheet" href="../PNavbar/index.css">
+    <link rel="stylesheet" href="../unit 3 project/style/style.css">
+
+    <!-- link by Pnavbar -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@700&family=Poppins:wght@100;200;300&family=Radio+Canada:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>My Account | Bath & Body Works</title>
+</head>
+<body>
+    <div id="navbar">
+
+    </div>
+    <div class="mainContainer">
+        <p class="locationLogin"><a href="..Pnavbar/index.html">Home</a>/ SIGN IN OR SIGN UP</p>
+        <div class="inputContainer">
+            <div class="topPoster">
+                <img src="https://www.bathandbodyworks.com/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw67bc4699/images/banners/sign-in_d.png" class="img" alt="">
+            </div>
+            <div class="topHeading">
+                <h2>Sign In or Sign Up</h2>
+            </div>
+            <div class="loginSignBox">
+                <div>
+                    <div class="loginSignBox_left">
+                        <div class="loginSignBox_left_title">
+                            <p>SIGN IN</p>
+                            <p>If you already have an account with us, sign in below</p>
+                        </div>
+                        <div class="loginSignBox_left_input">
+                            <label>Email Address</label><br>
+                            <input type="text" id="loginEmailVal" required><br>
+                            <label>Password</label><br>
+                            <input type="password" id="loginPassVal" required><br>
+                            <a href="#">Forgot Password?</a><br>
+                            <button id="loginBtn">SIGN IN</button>
+                        </div>
+                    </div>
+                    <div class="roundDiv"><h3>OR</h3></div>
+                </div>
+                <div>
+                    <div class="loginSignBox_left">
+                        <div class="loginSignBox_left_title">
+                            <p>SIGN UP</p>
+                            <p>Create an account to access the best of your favorite store</p>
+                        </div>
+                        <div class="loginSignBox_left_input1">
+                            <div class="loginSignBox_left_input1_Img">
+                                <img src="https://www.bathandbodyworks.com/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dwf946a6ac/images/loyalty/July19/nonloyalty_5thmkt_signuptile_D.png" class="img" alt="">
+                            </div>
+                            <button id="createAccount">CREATE AN ACCOUNT</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <footer id="footer">
+
+        </footer>
+    </div>
+    <script src="./scripts/login.js">
+    </script>
+    <script type="module">
+    import {navbar} from "../components/navbar.js";
+    document.getElementById("navbar").innerHTML = navbar();
+
+    import {footer} from "../components/footer.js";
+    document.getElementById("footer").innerHTML = footer();
+    </script>
+</body>
+</html>
