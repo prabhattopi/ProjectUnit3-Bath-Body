@@ -7,19 +7,19 @@ import {navbar}  from "../../components/navbar.js"
 
 
 
-let na=document.querySelector("nav")
-let scrollPrevious=window.pageYOffset;
-window.onscroll=function(){
-    let scrollCurrent=window.pageYOffset;
-    if(scrollPrevious>scrollCurrent){
-        na.style.top="50px";
+// let na=document.querySelector("nav")
+// let scrollPrevious=window.pageYOffset;
+// window.onscroll=function(){
+//     let scrollCurrent=window.pageYOffset;
+//     if(scrollPrevious>scrollCurrent){
+//         na.style.top="50px";
 
-    }
-    else{
-        na.style.top="-90px"
-    }
-    scrollPrevious=scrollCurrent
-}
+//     }
+//     else{
+//         na.style.top="-90px"
+//     }
+//     scrollPrevious=scrollCurrent
+// }
 
 
 
