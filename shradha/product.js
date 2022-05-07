@@ -2,6 +2,8 @@ let mensData = JSON.parse(localStorage.getItem("mens"))
 
  //console.log(mensData)
 
+ let cart = JSON.parse(localStorage.getItem("cart")) || []
+
 
 
 
@@ -12,12 +14,13 @@ let mensData = JSON.parse(localStorage.getItem("mens"))
 
     let div = document.createElement("div");
     div.id="divshr"
-    div.addEventListener("click",function(){
-        adddetails(el)
-    })
+    
 
     let image = document.createElement("img");
     image.src = el.image ;
+    image.addEventListener("click",function(){
+        adddetails(el)
+    })
 
     let ana = document.createElement("div");
     ana.id = "anna"
@@ -46,6 +49,9 @@ let mensData = JSON.parse(localStorage.getItem("mens"))
     let btn = document.createElement("button");
     btn.innerText = "ADD TO BAG";
     btn.id = "btnshr"
+    btn.addEventListener("click",function(){
+        addtocart(el)
+    })
      
     ana.append(name,about,price,discount)
     div.append(image,ana,btn);
@@ -63,4 +69,10 @@ function adddetails(el){
     localStorage.setItem("product_det",JSON.stringify(details))
     window.location.href="./product_details/product_details.html"
     //console.log(details)
+}
+function addtocart(el){
+    cart.push(el);
+    localStorage.setItem("cart",JSON.stringify(cart))
+    console.log(cart)
+
 }
