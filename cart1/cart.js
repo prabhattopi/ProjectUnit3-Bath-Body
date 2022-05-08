@@ -4,6 +4,20 @@ import { navbar } from "../components/navbar.js";
 document.getElementById("cartPageNavbar").innerHTML=footer();
 document.getElementById("cartPageFooter").innerHTML=navbar();
 
+let na=document.querySelector("nav")
+let scrollPrevious=window.pageYOffset;
+window.onscroll=function(){
+    let scrollCurrent=window.pageYOffset;
+    if(scrollPrevious>scrollCurrent){
+        na.style.top="50px";
+
+    }
+    else{
+        na.style.top="-90px"
+    }
+    scrollPrevious=scrollCurrent
+}
+
 
 
 var swiper = new Swiper(".mySwiper", {
