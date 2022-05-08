@@ -1,0 +1,637 @@
+#arrowtop {
+    margin-left: 1%;
+    margin-top: 16%;
+    margin-right: 0.5%;
+    font-size: 20px;
+    color: rgb(184, 180, 180);
+}
+
+#shoppingBagHeading {
+    height: 30px;
+    width: 75%;
+    border: 2px solid #292727;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: #333333;
+    margin: auto;
+    padding-bottom: 0.5%;
+    font-family: "Trade Gothic W01 Light", Arial, sans-serif;
+    margin-top: 1%;
+    margin-left: 15%;
+    margin-bottom: 4%;
+
+}
+
+#shoppingBagHeading>p {
+    font-size: 30px;
+    font-weight: 100;
+}
+
+
+/* legend {
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+} */
+
+a {
+    color: rgb(136, 134, 134);
+}
+
+
+.swiper-slide>div>img {
+    width: 80%;
+    height: 200px;
+  
+}
+
+.swiper-slide>div>p {
+    line-height: 35px;
+}
+
+.swiper-slide>div>h3 {
+    font-family: "Trade Gothic W01 Light", Arial, sans-serif;
+    margin-top: 8%;
+}
+
+.swiper-slide>div>p:last-child {
+    margin-top: -6%;
+    color: red;
+    font-size: 15px;
+}
+
+.swiper-slide>div>p:nth-child(5) {
+    color: red;
+    font-size: 15px;
+}
+
+.swiper {
+    width: 100%;
+    height: 450px;
+
+}
+#lastSlider{
+    margin-top: 4%;
+    margin-bottom: 15%;
+}
+.swiper-slide {
+
+    text-align: center;
+    font-size: 18px;
+    /* background: rgb(211, 21, 21); */
+    /* border: 1px solid red; */
+    width: auto;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-button-prev {
+    margin-left: -1%;
+    margin-top: 2%;
+
+}
+
+.swiper-button-next {
+    margin-right: -1%;
+
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.custom-field {
+    /* margin: auto;
+    height: 450px;
+    ; */
+
+    height: 453px;
+
+    border: 1px solid rgb(223, 220, 220);
+    border-top: none;
+    margin: 32px 0px 5% 0;
+    padding: 8px;
+    margin: auto;
+    width: 68%;
+    /* margin-left: 28%; */
+
+}
+
+/* Defining the style of the 
+  heading/legend for custom fieldset */
+.custom-field h1 {
+    font: 16px normal;
+    margin: -16px -8px 0;
+}
+
+/* Using float:left allows us to mimic
+     the legend like fieldset. The 
+     float:right property can also be 
+     used to show the legend on right side */
+
+.custom-field h1 span {
+    float: center;
+    font-weight: bold;
+}
+
+/* Creating the custom top border to make
+      it look like fieldset defining small 
+      border before the legend. The width 
+      can be modified to change position 
+      of the legend */
+.custom-field h1:before {
+    border-top: 1px solid rgb(238, 236, 236);
+    content: ' ';
+    float: left;
+    margin: 8px 2px 0 -1px;
+    width: 40%;
+}
+
+/* Defining a long border after the 
+  legend, using overflow hidden to 
+  actually hide the line behind the 
+  legend text. It can be removed
+  for a different effect */
+.custom-field h1:after {
+    width: 43%;
+    border-top: 1px solid rgb(238, 236, 236);
+    content: ' ';
+    display: block;
+    height: 17px;
+    left: 17%;
+    margin: -2% 1px 0 0;
+    overflow: hidden;
+    position: relative;
+    top: 10px;
+}
+
+
+
+
+
+/* 
+#productsLine {
+    margin: auto;
+    height: 450px;
+    width: 58%;
+    border: 1px solid rgb(223, 220, 220);
+    margin-left: 23%;
+} */
+
+
+
+#checkoutBtnSection {
+    margin: auto;
+    height: 315px;
+    margin-top: 3%;
+    width: 78%;
+    border: 3px solid rgb(241, 236, 236);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+#checkoutBtnSection>div:first-child {
+    display: flex;
+    justify-content: space-between;
+}
+
+#paypalBtn, #paypalBtn1 {
+    background-color: rgb(255, 196, 57);
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: -12%;
+}
+
+#checkoutBtn, #checkoutBtn1 {
+    background-color: #008527;
+
+}
+
+#checkoutBtn>a, #checkoutBtn1>a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#checkoutBtnSection>div:first-child>div:first-child{
+    margin-left: 1%;
+
+}
+
+#checkoutBtnSection>div:first-child>div:last-child {
+    width: 40%;
+    margin-bottom: 1%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#checkoutBtnSection>div:first-child>div:last-child>button {
+    width: 40%;
+    height: 40px;
+    border: none;
+    margin-top: 1%;
+    border-radius: 5px;
+}
+
+.fa-brands {
+    font-size: 20px;
+}
+
+.fas {
+    color: white;
+    font-size: 10px;
+    margin-right: 2%;
+    margin-top: 0.5%;
+}
+
+#bagShop {
+  
+    font-size: 17px;
+ margin-top: 14%;
+    font-family: Arial, sans-serif;
+}
+
+#second, #third {
+    width: 100%;
+    margin: auto;
+    height: 60px;
+    background-color: rgb(230, 245, 255);
+    color: #005699;
+    font-size: 16px;
+    padding-top: 1.5%;
+    padding-left: 2%;
+    font-weight: 800;
+    margin-top: 1%;
+    font-family: "TradeGothicLTW05-BoldNo.2", Arial, sans-serif;
+
+    /* border: 1px solid green; */
+}
+
+#third {
+    height: 50px;
+    background-color: hsl(0, 0%, 94%);
+    color: #111518;
+    font-size: 15px;
+    font-weight: 800;
+    text-align: center;
+
+}
+
+#fourth {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#fourth>div:nth-child(2) {
+    height: 60px;
+    margin-top: 2%;
+    width: none;
+    background-color: rgb(240, 234, 234);
+    border: 1px solid rgb(236, 234, 234);
+}
+
+#fourth>div:nth-child(1), #fourth>div:nth-child(3) {
+    display: flex;
+    font-size: 20px;
+    font-family: "TradeGothicLTW05-BoldNo.2", Arial, sans-serif;
+}
+
+#fourth>div:nth-child(1) {
+    padding-right: 3%;
+    width: 50%;
+    justify-content: flex-end;
+
+}
+
+#fourth>div:nth-child(3) {
+    margin-left: 1%;
+    width: 50%;
+}
+
+#fourth>div:nth-child(1)>i {
+    margin-top: 7%;
+}
+
+#fourth>div:nth-child(3)>i {
+    margin-top: 7%;
+    margin-right: -26%;
+}
+
+pre {
+    margin-top: 3%;
+    margin-left: -16%;
+}
+
+
+
+#fourth>div:nth-child(1)>p {
+    margin-top: 7%;
+    color: darkblue;
+}
+
+#cartArea {
+
+    margin: auto;
+    height: auto;
+    width: 78%;
+    margin-top: 1%;
+    border: 1px solid rgb(236, 234, 234);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+#cartArea>div:first-child {
+    width: 100%;
+    height: 45px;
+    background-color: hsl(0, 0%, 94%);
+    color: #111518;
+    font-size: 17px;
+    font-weight: bold;
+    display: flex;
+    font-family: "TradeGothicLTW05-BoldNo.2", Arial, sans-serif;
+    justify-content: space-between;
+    padding-top: 1.3%;
+    padding-left: 1%;
+    padding-right: 8%;
+    margin-bottom: -1%;
+}
+
+#cartAreaMiddle {
+    display: flex;
+    gap: 50px;
+    margin-left: 15%;
+}
+
+#cartProductsDetails {
+    width: 99.6%;
+    height: auto;
+  
+}
+
+#updateCart {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 84.5%;
+    padding: 10px 30px;
+    background-color: black;
+
+}
+
+#updateCart>a {
+    color: white;
+    text-decoration: none;
+}
+
+#promocodeDiv {
+    margin: auto;
+    display: flex;
+    height: 440px;
+    width: 78%;
+    margin-bottom: 3%;
+    /* border: 1px solid red; */
+}
+
+#promocodeDiv>div {
+    /* width: 50%; */
+    /* border: 1px solid red; */
+    margin-top: 3%;
+}
+
+#promocodeDiv>div:first-child {
+    width: 58%;
+    
+}
+
+#promoCode {
+    padding-top: 4%;
+    padding-left: 5%;
+    height: 200px;
+    width: 70%;
+  
+    padding-right: 2%;
+    border: 1px solid rgb(230, 227, 227);
+    font-family: "TradeGothicLTW05-BoldNo.2", Arial, sans-serif;
+}
+
+#promoCode>p>input {
+    width: 60%;
+    height: 40px;
+    margin-top: 8%;
+    border: 1px solid rgb(224, 223, 223);
+}
+
+#promoCode>p>button {
+    width: 35%;
+    height: 40px;
+    background-color: black;
+    margin-left: -2%;
+    color: white;
+}
+
+h3+p {
+    margin-top:7%;
+    font-size: 17px;
+    color: rgb(119, 118, 118);
+}
+
+#cartTotalSec {
+    font-size: 16px;
+    width: 60%;
+    font-family: "TradeGothicLTW05-BoldNo.2", Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding-top: 1%;
+}
+
+.priceSec, .priceSec1 {
+    background-color: #f0f0f0;
+    margin: auto;
+    padding-top:2%;
+    width: 90%;
+    height: 40px;
+    /* border:1px solid red; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.priceSec1 {
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 0px;
+    padding-bottom: 5%;
+}
+
+#taxPara {
+    margin-left: 5%;
+    margin-top: 4%;
+    margin-bottom: 3%;
+}
+
+hr {
+    width: 90%;
+    margin: auto;
+    border: 1px solid rgb(207, 205, 205);
+    background-color: rgb(207, 205, 205);
+    margin-bottom: 3%;
+}
+
+
+#paypalBtn1, #checkoutBtn1 {
+    border: none;
+    width: 48%;
+    height: 40px;
+margin-bottom: 4%;
+}
+
+#btnSectyion {
+    margin-bottom: 1%;
+    width: 90%;
+    /* border: 1px solid red; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#btnSectyion~p {
+    line-height: 25px;
+    margin-left: 5%;
+    margin-bottom: 0%;
+    color: rgb(110, 109, 109);
+}
+
+.payPalImage {
+    width: 40%;
+    height: 20px;
+    margin-top: 2%;
+}
+
+.logos {
+    width: 40%;
+    height: 20px;
+    margin-right: -15%;
+    margin-top: 7%;
+}
+
+#mapLogo {
+    margin-top: 7%;
+    height: 27px;
+    margin-left: 4%;
+}
+
+#cartProductDetails>div{
+    font-family: "TradeGothicLTW05-BoldNo.2", Arial, sans-serif;
+display: flex;
+border: 2.5px solid rgb(8, 7, 7);
+border-top: none;
+border-left: none;
+font-size: 15px;
+border-right: none;
+
+}
+#cartProductDetails>div{
+    padding-top: 2%;
+    padding-bottom: 1%;
+}
+#cartProductDetails>div>img{
+    margin-top: 1.5%;
+    width: 6%;
+    height: 190px;
+    margin-left: 3%;
+  
+}
+
+#cartProductDetails>div>div>p{
+  line-height: 35px;
+  width: 80%;
+}
+
+#cartProductDetails>div>div>p:first-child, #cartProductDetails>div>div>p:nth-child(3){
+    line-height: 20px;
+}
+
+#cartProductDetails>div>div>p:nth-child(3){
+    color:#cc0000;
+    font-weight: 400;
+}
+
+#cartProductDetails>div>div>p:first-child{
+    font-weight: 550;
+    color: #333333;
+
+}
+#cartProductDetails>div>div{
+    margin-left: 3%;
+    /* border: 2.5px solid rgb(8, 7, 7); */
+}
+
+#promo{
+    font-size: 12px;
+    margin-top: -6px;
+    color: rgb(116, 114, 114);
+}
+#wishlistPara{
+    text-decoration: underline;
+margin-top: 5%;
+margin-bottom: 9%;
+}
+#wishimg{
+    width: 6%;
+    height: 15px;
+    margin-top: 5.5%;
+    margin-right: 1%;
+}
+#wislistDiv, #incDecDiv{
+    display: flex;
+}
+#incDecDiv{
+    height: 43px;
+    background-color:  hsl(0, 0%, 94%);
+    padding: 0% 1% 0 1%;
+    margin-left: 3%;
+    gap: 30px;
+   font-size: 19px;
+}
+
+#incDecDiv>p:nth-child(1),#incDecDiv>p:nth-child(3){
+    font-size: 20px;
+    margin-top: 10%;
+    font-weight: none;
+}
+
+#incDecDiv>p:nth-child(3){
+    font-size: 30px;
+}
+#teachProdTotal{
+    margin-left: 28%;
+    font-size: 18px;
+    font-weight: bold;
+}
+#removeBtn{
+margin-left: 4%;
+}
+#noofprodinCart{
+    margin-right: 1%;
+}
+#coutner{
+    margin-top: 8%;
+}
