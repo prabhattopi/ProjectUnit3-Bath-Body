@@ -1,0 +1,336 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+
+
+
+.progress-bar .step:nth-child(1) .bullet span{
+    font-size: 17px;
+    text-align: center;
+    margin-top: 0px;
+
+}
+
+
+
+.progress-bar .step:nth-child(1) .bullet{
+    position: absolute;
+    text-align: center;
+
+    width: 25px;
+    height: 25px;
+    /* border:2px solid rgb(19, 3, 77); */
+    background-color:rgb(19, 3, 77) ;
+    color: white;
+ 
+}
+.progress-bar .step:nth-child(2) .bullet{
+    position: absolute;
+    text-align: center;
+
+    width: 25px;
+    height: 25px;
+    border:2px solid rgb(19, 3, 77);
+ 
+}
+.progress-bar .step:nth-child(1) .bullet::before,.progress-bar .step:nth-child(1) .bullet::after{
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 244px;
+    color: lightgray;
+    background-color:rgb(11, 1, 46);
+   bottom: 10px;
+   left:23px;
+
+}
+
+
+
+/* .progress-bar .step:nth-child(1) .bullet::before,.progress-bar .step:nth-child(1) .bullet::after{
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 230px;
+    color: lightgray;
+    background-color:lightgray;
+   bottom: 10px;
+   left:25px;
+
+} */
+
+.progress-bar .step p{
+    margin-left: 23px;
+}
+
+
+
+
+
+
+
+
+.progress-bar .step:nth-child(2) .bullet{
+    margin-top:0px;
+
+}
+.progress-bar .step:nth-child(3) .bullet{
+    margin-top: 0px;
+}
+
+
+.progress-bar .step:nth-child(2){
+    opacity: 1;
+}
+.progress-bar .step:nth-child(3){
+    opacity: 0.2;
+}
+.progress-bar .step .bullet::before,.progress-bar .step .bullet::after{
+    background-color: lightgray;
+    opacity: 0.3;
+}
+
+.wanda{
+    display: flex;
+    justify-content: space-around;
+    height: 1000px;
+    
+
+}
+
+.wanda .wanda1 .billi{
+    font-size: 15px;
+  
+     
+}
+.wanda .wanda1 .billi h1{
+    font-weight: 400;
+}
+.wanda .wanda1 .adda{
+    border: 1px solid rgb(163, 157, 157);
+    margin-left: 10px;
+}
+.wanda .wanda1 .adda .ul{
+    height: fit-content;
+    width: 400px;
+    padding: 1.2rem 0.8rem;
+}
+.wanda .wanda1 .adda ul{
+    list-style: none;
+    
+}
+.wanda .wanda1 .adda li{
+    margin: 5px;
+    
+}
+.wanda .wanda1 .adda a{
+    margin-left: 10px;
+    font-size: 13px;
+}
+.wanda .wanda1 .cotact{
+    padding: 1.2rem 0.6rem;
+}
+.wanda .wanda1 .cotact h2{
+    font-weight: 400;
+    margin-left: -5px;
+}
+.wanda .wanda1 .cotact .ema {
+    font-size: 17px;
+}
+.wanda .wanda1 .cotact .ema span{
+   color: red;
+   margin-right: 10px;
+}
+.wanda .wanda1 .cotact input{
+    margin-top: 10px;
+    width: 95%;
+    height: 35px;
+    padding: 1.2rem 0.6rem;
+    margin-left: 10px;
+    
+}
+.wanda .wanda1 .cotacti h2{
+    margin-top: -5px;
+    font-weight: 400;
+    margin-left: -5px;
+}
+.wanda .wanda1 .cotacti .ema{
+ font-size: 14px;
+ margin-left: 8px;
+}
+.wanda .wanda1 .cotacti .ema input{
+    margin-top: 10px;
+    width: 95%;
+    height: 10px;
+    padding: 0.8rem 0.6rem;
+    margin-left: 10px;
+    outline: none;
+}
+.wanda .wanda1 .cotacti .ema #vision{
+    position: absolute;
+    margin-left: -120px;
+    margin-top: 11px;
+    width: 120px;
+    background-color: black;
+    color: white;
+    letter-spacing: 1.5;
+    height:28px;
+}
+.wanda .wanda1 .Pay h2{
+    margin-top: 6px;
+    font-weight: 400;
+    margin-left: -5px;
+}
+.wanda .wanda1 .whole {
+    display: flex;
+    font-size: 14px;
+    justify-content: space-between;
+
+}
+
+
+.wanda .wanda1 .whole input{
+    width: 13px;
+    height: 13px;
+    margin-right: 5px;
+}
+.wanda .wanda1 .whole .image1 img{
+    height: 20px;
+    object-fit: cover;
+}
+.wanda .wanda1 .whole .image2 img{
+    margin-left: -10px;
+    height: 25px;
+}
+.wanda .wanda1 .petter{
+    font-size: 14px;
+    padding: 0.8rem 0.5rem;
+    display: none;
+    /*opacity: 0;
+    
+    /* transition: display 0.4s ease-in ;
+    -webkit-transition: display 0.4s ease-in ;
+    -moz-transition: display 0.4s ease-in ;
+    -ms-transition: display 0.4s ease-in ;
+    -o-transition: display 0.4s ease-in ; */
+}
+.wanda .wanda1 .petter.active{
+  display: block;
+
+}
+.wanda .wanda1 .petter .fullname span{
+    color: red;
+    margin-right: 5px;
+}
+.wanda .wanda1 .petter .fullname{
+ margin-right: 5px;
+ margin: 10px;
+}
+
+.wanda .wanda1 .petter .fullname .req{
+    position: absolute;
+    margin-left: 180px;
+    margin-top: -30px;
+    
+}
+.wanda .wanda1 .petter .fullname input{
+    width: 80%;
+    height: 30px;
+    padding: 0.5rem 0.5rem;
+    margin-top: 5px;
+
+}
+.wanda .wanda1 .petter .fullname .flex{
+    display: flex;
+   justify-content: space-evenly;
+
+}
+.wanda .wanda1 .petter .fullname .flex select{
+    width:150px;
+    height: 40px;
+    margin-left: -10px;
+    text-align: center;
+}
+.wanda .wanda1 .bottle{
+    display: block;
+}
+.botttle button{
+    width: 150px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    outline: none;
+    font-size: 15px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    margin-top: 10px;
+}
+
+.botttle span{
+    font-size: 13px;
+    margin-left: 10px;
+}
+.wanda .wanda1 .allo{
+    border: 2px solid green;
+    width: 300px;
+    height: fit-content;
+    display: none;
+    
+}
+.wanda .wanda1 .allo .boxi h1{
+    font-size: 17px;
+    font-weight: 400;
+
+}
+.wanda .wanda1 .allo .parel p{
+    
+    margin-left: 15px;
+}
+.wanda .wanda1 .allo .butt{
+   
+    margin-right: auto;
+}
+.wanda .wanda1 .allo .butt button{
+    background-color: green;
+    color: white;
+    margin-left: 180px;
+    outline: none;
+    border: none;
+    width: 100px;
+    height: 30px;
+    margin-bottom: 10px;
+  
+}
+.wanda .wanda1 .allo.active{
+    display: block;
+}
+.wanda .wanda1 .botttle.active{
+    display: none;
+}
+
+
+.pq{
+    display: none;
+    color: red;
+    letter-spacing: 1.3;
+    animation: animate 0.2s linear infinite;
+    -webkit-animation: animate 0.4s linear infinite;
+}
+@keyframes animate {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+

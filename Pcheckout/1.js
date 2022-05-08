@@ -1,7 +1,10 @@
 import { checkout } from "../components/checkoutnavbar.js";
+import { paymentfooter } from "../components/paymentfooter.js";
 
 let navbari=document.getElementById("Thanos")
 navbari.innerHTML=checkout()
+let navi=document.getElementById("strange")
+navi.innerHTML=paymentfooter()
 
 
 $(window).on("load",function(){
@@ -225,8 +228,9 @@ but.onclick=function(){
 
 
 
+let Data=[]
+let kato=0
 
-document.getElementById("ballo").addEventListener("click",spenta)
 function spenta(){
   let name=document.getElementById("name").value
   let last=document.getElementById("last").value
@@ -240,20 +244,47 @@ function spenta(){
   // let check=document.getElementById("cheka").value
   
   
-  let Data=[]
+ 
   
   // let obj={
   
   
   // }
-  
+  let ballo=document.getElementById("ballo")
+  let obj={
+    name:name+" "+last,
+    Address1:Address1,
+    Address2:Address2,
+    country:country,
+    city:city,
+    state:state,
+    code:code,
+    number:number
+    
+
+  }
+  let counta=0
+  Data.push(obj)
+  localStorage.setItem("loki",JSON.stringify(Data))
+  for(var key in obj){
+    if(obj[key]!=""){
+      counta++
+    }
+  }
+  console.log(Object.keys(obj).length)
+  if(counta==Object.keys(obj).length){
+    ballo.classList.add("active")
+  }
+  else{
+    ballo.classList.remove("active")
+  }
   
   
   
   
   let spa=document.querySelector(".sab")
   // let cari=0
-  let ballo=document.getElementById("ballo")
+
   
   
   
@@ -270,6 +301,7 @@ function spenta(){
  if(name=="" || last=="" || Address1=="" || Address2=="" || country=="" || city=="" || state=="" || code=="" || number==""){
   spa.classList.add("active")
   console.log(name)
+  
 
  }
 
@@ -277,13 +309,22 @@ function spenta(){
 
 else{
   spa.classList.remove("active")
- ballo.classList.add("active")
+  setTimeout(() => {
+    window.location.href="./2.html"
+  },2500);
+ 
+
+ 
 }
 
 
 
 
 }
+
+document.getElementById("ballo").addEventListener("click",spenta)
+
+
 
 
 

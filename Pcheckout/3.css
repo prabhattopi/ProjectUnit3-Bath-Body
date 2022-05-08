@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.progress-bar .step:nth-child(1) .bullet span{
+    font-size: 17px;
+    text-align: center;
+    margin-top: 0px;
+
+}
+.progress-bar .step:nth-child(2) .bullet span{
+    font-size: 17px;
+    text-align: center;
+    margin-top: 0px;
+
+}
+
+
+
+.progress-bar .step:nth-child(1) .bullet{
+    position: absolute;
+    text-align: center;
+
+    width: 25px;
+    height: 25px;
+    /* border:2px solid rgb(19, 3, 77); */
+    background-color:rgb(19, 3, 77) ;
+    color: white;
+ 
+}
+.progress-bar .step:nth-child(2) .bullet{
+    position: absolute;
+    text-align: center;
+
+    width: 25px;
+    height: 25px;
+    border:2px solid rgb(19, 3, 77);
+    background-color: rgb(21, 5, 79);
+    color: white;
+
+ 
+}
+.progress-bar .step:nth-child(1) .bullet::before,.progress-bar .step:nth-child(1) .bullet::after{
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 249px;
+    color: lightgray;
+    background-color:rgb(11, 1, 46);
+   bottom: 10px;
+   left:23px;
+
+}
+
+
+
+.progress-bar .step:nth-child(2) .bullet::before,.progress-bar .step:nth-child(2) .bullet::after{
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 236px;
+    color: rgb(11, 1, 46);
+    background-color:rgb(11, 1, 46);
+   bottom: 10px;
+   left:23px;
+
+}
+
+.progress-bar .step p{
+    margin-left: 23px;
+}
+
+
+
+
+
+
+
+
+.progress-bar .step:nth-child(2) .bullet{
+    margin-top:0px;
+
+}
+.progress-bar .step:nth-child(3) .bullet{
+    margin-top: 0px;
+}
+
+
+.progress-bar .step:nth-child(2){
+    opacity: 1;
+}
+.progress-bar .step:nth-child(3){
+    opacity: 1;
+}
+.progress-bar .step .bullet::before,.progress-bar .step .bullet::after{
+    background-color: lightgray;
+    opacity: 0.3;
+}
+
+
+
+
+
+
+
+.wan{
+    display: flex;
+    justify-content: space-around;
+}
+.wan .wanda2{
+    height: fit-content;
+}
+.wan .wanda2 .conta{
+    height: fit-content;
+
+}
+.button{
+    margin-top: 50px;
+}
+.button button{
+    margin-top: 30px;
+    display: block;
+    margin-top: -20%;
+    margin-left: 50%;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    animation: alo 0.4s linear infinite;
+    -webkit-animation: alo 0.4s linear infinite;
+    border: none;
+    outline: none;
+}
+@keyframes alo {
+    0%{
+        transform: translateY(-10%);
+        -webkit-transform: translateY(-10%);
+        -moz-transform: translateY(-10%);
+        -ms-transform: translateY(-10%);
+        -o-transform: translateY(-10%);
+        font-size: 15px;
+        background: rgb(162,62,143);
+        background: linear-gradient(90deg, rgba(162,62,143,1) 5%, rgba(180,64,120,1) 8%, rgba(253,74,29,1) 20%, rgba(131,58,180,1) 60%, rgba(252,176,69,1) 100%);
+}
+100%{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+color: white;
+}
+    
+}
+
+
+.adda{
+    border: 1px solid rgb(163, 157, 157);
+    margin-left: 10px;
+    margin-top: 30px;
+}
+.adda .ul{
+    height: fit-content;
+    width: 400px;
+    padding: 1.2rem 0.8rem;
+}
+.adda ul{
+    list-style: none;
+    
+}
+.adda li{
+    margin: 5px;
+    
+}
+.adda a{
+    margin-left: 10px;
+    font-size: 13px;
+}
