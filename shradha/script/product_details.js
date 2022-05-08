@@ -66,7 +66,13 @@ product.map((el)=>{
    det.style.marginTop = "-5px"
 
 
-   let hor = document.createElement("hr")
+   let hor = document.createElement("hr");
+   hor.style.marginLeft = "20px";
+   let hor1 = document.createElement("hr");
+   hor1.style.marginLeft = "20px";
+   let hor2 = document.createElement("hr");
+   hor2.style.marginTop = "20px";
+   hor2.style.marginLeft = "20px";
 
    let deleverysh = document.createElement("div");
    deleverysh.id = "delev" ;
@@ -116,17 +122,30 @@ product.map((el)=>{
    });
    
 
+   let s = document.createElement("button");
+   s.innerText = "ADD TO BAG";
+   s.id = "btnshr"
+    s.addEventListener("click",function(){
+        addtocart(el)
+    })
+
 
 
    document.getElementById("as2").innerText = el.about +" " + "/" ;
    // deleverysh.append(h6,h61,p1,h5,hor)
 
-   div3.append(spansh,inputsh,spans)
+   div3.append(spansh,inputsh,spans,s)
    star.append(li,re)
-   document.getElementById("detailshra").append(name,about,star,price,des,gift,det,hor,deleverysh,div3);
+   document.getElementById("detailshra").append(name,about,star,price,des,gift,det,hor,deleverysh,hor1,div3,hor2);
 
    document.getElementById("imageshr").append(image , image2)
 })
 
 
+let cart = JSON.parse(localStorage.getItem("cart")) || [] ;
+function addtocart(el){
+   cart.push(el);
+   localStorage.setItem("cart",JSON.stringify(cart))
+   console.log(cart)
 
+}
