@@ -69,7 +69,7 @@ const navbar=()=>{
         <div class="links">
           
           <div class="search"><input type="text" placeholder="Search"> <span><i class="fa-solid fa-magnifying-glass"></i></span></div>
-          <div class="sign_in"><img src="../Images/photo.png" alt=""></div>
+          <div class="sign_in"><a href="./Login_SignUp/login.html"><img src="../Images/photo.png" alt=""></a></div>
           <div class="signInForm hide">
             <form id="sign_in">
               <label for="email">Email</label> <br />
@@ -87,12 +87,15 @@ const navbar=()=>{
             </form>
           </div>
           <div class="cart"></div>
-          <div class="country">
-            <img
+        <div class="country">
+         
+        
+          <img
+         
               src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/Sites-BathAndBodyWorks-Site/-/en_US/v1651571161245/images/svg-icons/UI-AddToBag.svg?yocs=o_s_"
               alt="Flag"
             />
-            <span id="starlord"></span>
+            <a href="./Products/cart/cart.html"><span id="starlord"></span></a>
           </div>
         </div>
       </div>
