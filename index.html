@@ -464,7 +464,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script type="text/javascript">
 
-let dataArr = JSON.parse(localStorage.getItem("pages")) || [] 
+
 
     $('.slider').slick({
   dots: false,
@@ -510,41 +510,10 @@ document.querySelector(".slick-next").innerText=null
 
  
 
-function myFunction() {
-    dataArr.push("mens")
-    console.log(dataArr)
-   localStorage.setItem("pages",JSON.stringify(dataArr))
-   window.location.href = "../shradha/product.html"
-   
-}
-function sanitizer(){
-    dataArr.push("santitazer");
-    localStorage.setItem("pages",JSON.stringify(dataArr))
-    window.location.href = "../shradha/product.html"
-}
-
-function handshoap (){
-    dataArr.push("hand_soap");
-    localStorage.setItem("pages",JSON.stringify(dataArr))
-    window.location.href = "../shradha/product.html"
-}
-
-function carfarg(){
-    dataArr.push("car_frangrance");
-    localStorage.setItem("pages",JSON.stringify(dataArr))
-    window.location.href = "../shradha/product.html"
-}
-
-
-function homefrag(){
-    dataArr.push("newhome_fr");
-    localStorage.setItem("pages",JSON.stringify(dataArr))
-    window.location.href = "../shradha/product.html"
-}
-
 
 </script>
 <script src="./unit 3 project/index.js" type="module"></script>
+<script src="./shradha/script/product.js"></script>
 
 
 </body>

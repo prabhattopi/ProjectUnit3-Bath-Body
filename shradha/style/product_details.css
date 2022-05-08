@@ -1,4 +1,10 @@
+*{
+    font-family:  "Trade Gothic W01 Regular", "Trade Gothic W01 Light", Arial, sans-serif;;
+}
+
+
 #mainshr{
+    /* margin-top: 550px; */
     display: grid;
     border: 1px solid black;
     width: 60%;
@@ -6,7 +12,42 @@
     margin: auto;
     grid-template-columns: repeat(2,1fr);
     gap: 10px;
+    /* margin-top: 200px; */
 }
 #mainshr>DIV{
-    border: 1px solid saddlebrown;
+    border: 3px solid hotpink;
+}
+
+
+#shra{
+    /* border: 1px solid forestgreen; */
+    width: auto;
+    height: 30px;
+    margin-top: 230px;
+    margin-left: 10px;
+}
+#shra>a{
+    color: black;
+    text-decoration: underline;
+    /* font-weight: bold; */
+    font-size: 13px;
+}
+#imageshr{
+    width: 100%;
+    height: 500px;
+}
+#imagea{
+    
+   margin-left: 80px;
+   margin-top: 80px;
+    width: 80%;
+    height: 80%;
+   
+    
+
+}
+#image2{
+    width: 25%;
+    height: 20%;
+    margin-left: 30px;
 }
