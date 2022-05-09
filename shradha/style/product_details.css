@@ -85,7 +85,10 @@
 #delev{
     /* border: 1px solid rebeccapurple; */
     width: 100%;
-    height: 200px;
+    /* height: 200px; */
+}
+h6{
+    line-height: 21px;
 }
 
 span {cursor:pointer; }
@@ -146,4 +149,15 @@ input{
 #btnshr:hover{
     background: rgb(211, 208, 208);
     color: black;
+}
+#desh{
+    display: flex;
+    /* border: 2px solid royalblue; */
+    /* justify-content: center; */
+}
+#slishr{
+    height: 300px;
+    width: 100%;
+    margin: auto;
+    border: 1px solid seagreen;
 }

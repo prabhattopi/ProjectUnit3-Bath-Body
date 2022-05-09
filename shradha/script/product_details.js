@@ -70,6 +70,7 @@ product.map((el)=>{
    hor.style.marginLeft = "20px";
    let hor1 = document.createElement("hr");
    hor1.style.marginLeft = "20px";
+   hor.style.marginTop = "18px"
    let hor2 = document.createElement("hr");
    hor2.style.marginTop = "20px";
    hor2.style.marginLeft = "20px";
@@ -80,15 +81,37 @@ product.map((el)=>{
 
    let h6 = document.createElement("h6");
    h6.innerText = "How do you want to receive it?" ;
+   h6.style.marginLeft = "20px";
+   h6.style.marginTop = "14px"
 
    let h61 = document.createElement("h6");
    h61.innerText = "Ship it " ;
+   h61.style.marginLeft = "35px";
+
+
+   let de = document.createElement("div");
+   de.id = "desh";
+
+   let k = document.createElement("img");
+   k.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA3MyvKuF5Zwk56cLzFyazcmSd002lUdZNgw&usqp=CAU";
+   k.style.width = "40px";
+   k.style.height = "40px";
+   k.style.marginLeft = "35px"
+
 
    let p1 = document.createElement("p");
    p1.innerText = "Available" ;
+   p1.style.marginLeft = "5px";
+   p1.style.marginTop = "5px"
+   p1.style.lineHeight = "28px";
+   p1.style.fontSize = "12px";
 
    let h5 = document.createElement("h5");
-   h5.innerText = "Not eligible for Pick Up In Store"
+   h5.innerText = "Not eligible for Pick Up In Store";
+   h5.style.marginLeft = "35px";
+   h5.style.lineHeight = "28px" ;
+   h5.style.fontSize = "14px";
+   h5.style.marginBottom = "14px"
 
    let div3 = document.createElement("div");
    div3.setAttribute("class","number");
@@ -130,9 +153,12 @@ product.map((el)=>{
     })
 
 
+   
 
    document.getElementById("as2").innerText = el.about +" " + "/" ;
-   // deleverysh.append(h6,h61,p1,h5,hor)
+   
+    de.append(k,p1)
+    deleverysh.append(h6,h61,de,h5,hor)
 
    div3.append(spansh,inputsh,spans,s)
    star.append(li,re)
