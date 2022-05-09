@@ -4,6 +4,20 @@ import { navbar } from "../components/navbar.js";
 document.getElementById("cartPageNavbar").innerHTML=footer();
 document.getElementById("cartPageFooter").innerHTML=navbar();
 
+var cartData = JSON.parse(localStorage.getItem("cart"))||[]
+
+let length=cartData.length
+document.getElementById("starlord").innerText=`${length}`
+function len(cartData){
+    document.querySelector("#starlord").innerText=null
+  let length=cartData.length
+  document.querySelector("#starlord").innerText=`${length}`
+}
+
+window.addEventListener("load",function(){
+    len(cartData)
+})
+
 let na=document.querySelector("nav")
 let scrollPrevious=window.pageYOffset;
 window.onscroll=function(){
