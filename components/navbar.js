@@ -95,7 +95,7 @@ const navbar=()=>{
               src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/Sites-BathAndBodyWorks-Site/-/en_US/v1651571161245/images/svg-icons/UI-AddToBag.svg?yocs=o_s_"
               alt="Flag"
             />
-            <a href="./Products/cart/cart.html"><span id="starlord"></span></a>
+            <a href="../Products/cart/cart.html"><span id="starlord"></span></a>
           </div>
         </div>
       </div>
