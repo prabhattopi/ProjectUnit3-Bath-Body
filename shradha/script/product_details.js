@@ -166,11 +166,21 @@ product.map((el)=>{
 
    document.getElementById("imageshr").append(image , image2)
 })
-
+// let length=cartData.length
+// document.getElementById("starlord").innerText=`${length}`
+// function len(cartData){
+//     document.querySelector("#starlord").innerText=null
+//   let length=cartData.length
+//   document.querySelector("#starlord").innerText=`${length}`
+// }
+// window.addEventListener("load",function(){
+//     len(cartData)
+// })
 
 let cart = JSON.parse(localStorage.getItem("cart")) || [] ;
 function addtocart(el){
    cart.push(el);
+   // len(cartData)
    localStorage.setItem("cart",JSON.stringify(cart))
    console.log(cart)
 

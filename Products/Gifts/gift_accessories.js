@@ -241,12 +241,22 @@ var gift_accessories = [
       
           document.querySelector("#container").append(box);
       })
-    
+      let length=cartData.length
+      document.getElementById("starlord").innerText=`${length}`
+      function len(cartData){
+          document.querySelector("#starlord").innerText=null
+        let length=cartData.length
+        document.querySelector("#starlord").innerText=`${length}`
+      }
+      window.addEventListener("load",function(){
+          len(cartData)
+      })
     
     
       function addToCart(elem){
         console.log(elem);
         cartData.push(elem);
+        len(cartData)
         localStorage.setItem("cart", JSON.stringify(cartData));
         alert("item added to cart")
     }
