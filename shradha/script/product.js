@@ -112,7 +112,7 @@ const getdata = ()=>{
     let data = JSON.parse(localStorage.getItem("pages"));
     // console.log(data)
     let data1 = data[data.length-1]
-    // console.log(data1)
+     console.log(data1)
     let dataa = JSON.parse(localStorage.getItem(`${data1}`))
     // console.log(dataa)
     // console.log(mensData)
