@@ -1,5 +1,3 @@
-var cartData = JSON.parse(localStorage.getItem("cart"))||[]
-
 
 
 document.getElementById("loginBtn").addEventListener("click", startLogin)
@@ -62,13 +60,4 @@ document.getElementById("createAccount").addEventListener("click", function(){
 });
 
 // prabhat js code
-let length=cartData.length
-document.getElementById("starlord").innerText=`${length}`
-function len(cartData){
-    document.querySelector("#starlord").innerText=null
-  let length=cartData.length
-  document.querySelector("#starlord").innerText=`${length}`
-}
-window.addEventListener("load",function(){
-    len(cartData)
-})
+
