@@ -7,9 +7,6 @@
 // let app = JSON.parse(localStorage.getItem("pages"))
 // console.log(app)
 
-    let data = JSON.parse(localStorage.getItem("pages"));
-    let data1 = data[data.length-1]
-    let dataa = JSON.parse(localStorage.getItem(`${data1}`))
 
 let dataArr = JSON.parse(localStorage.getItem("pages")) || [] 
 
@@ -112,13 +109,13 @@ const appendData =  (data1)=>{
 
 
 const getdata = ()=>{
-    // let data = JSON.parse(localStorage.getItem("pages"));
-    // // console.log(data)
-    // let data1 = data[data.length-1]
-    // // console.log(data1)
-    // let dataa = JSON.parse(localStorage.getItem(`${data1}`))
-    // console.log(dataa)
-    // console.log(mensData)
+    let data = JSON.parse(localStorage.getItem("pages"));
+    // console.log(data)
+    let data1 = data[data.length-1]
+    // console.log(data1)
+    let dataa = JSON.parse(localStorage.getItem(`${data1}`))
+    console.log(dataa)
+    console.log(mensData)
     appendData(dataa)
 }
 
@@ -168,6 +165,10 @@ document.getElementById("sort_by").addEventListener("change",function(){
 
 
 function pricesort(){
+    
+    let data = JSON.parse(localStorage.getItem("pages"));
+    let data1 = data[data.length-1]
+    let dataa = JSON.parse(localStorage.getItem(`${data1}`))
     
     // console.log(dataa)
     let selected = document.querySelector("#sort_by").value;
