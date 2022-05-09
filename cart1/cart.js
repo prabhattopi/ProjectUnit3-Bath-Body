@@ -121,11 +121,11 @@ if(lengthProducts===0){
 
 
 var priceOfItems = cartPagedata.reduce(function (acc, elem){
-    return acc+elem.price;
+    return acc+Number(elem.price);
 },0)
 
 
-document.querySelector("#subtotal").innerText= `$${priceOfItems.toFixed(2)}`
+document.querySelector("#subtotal").innerText="$"+priceOfItems.toFixed(2)
 document.querySelector("#ordeTotal").innerText = `$${priceOfItems + 6.99 + 2.15}`
 
 function displayData(cartPagedata) {
@@ -185,11 +185,11 @@ function displayData(cartPagedata) {
 
 
         image1.src = elem.image;
-        title1.innerText = elem.title;
-        category1.innerText = elem.category;
-        offer1.innerText = elem.offer;
+        title1.innerText = elem.name;
+        category1.innerText = elem.about;
+        offer1.innerText = elem.discount;
 
-        price1.innerText = `$${elem.price.toFixed(2)}`
+        price1.innerText ="$"+Number(elem.price).toFixed(2)
         price1.style.fontSize = "16px"
 
         teachProdTotal.innerText = "$" + (elem.price * parseInt(numberP.innerText)).toFixed(2)
