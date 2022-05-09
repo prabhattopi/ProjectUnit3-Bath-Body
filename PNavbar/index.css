@@ -69,10 +69,10 @@
     font-size: 14px;
     cursor: pointer;
     opacity: 0;
-    pointer-events: none;
+     pointer-events: none; 
     box-shadow: 0.1rem 0.1rem 0.5rem 0rem rgb(168 164 173 / 50%);
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+     -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; 
   }
   
  .scroll-up-btn.show {
@@ -1296,7 +1296,7 @@
  
       position:absolute;
       outline: none;
-      width: 80%;
+      width: 53%;
       height: 40px;
       padding: 0.8rem 0.5rem;
       border: none;
