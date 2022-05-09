@@ -152,8 +152,23 @@ function addtocart(el){
     cart.push(el);
     localStorage.setItem("cart",JSON.stringify(cart))
     console.log(cart)
+    
+    window.location.reload();
+    len(cartData)
 
 }
+let length=cartData.length
+document.getElementById("starlord").innerText=`${length}`
+function len(cartData){
+    document.querySelector("#starlord").innerText=null
+  let length=cartData.length
+  document.querySelector("#starlord").innerText=`${length}`
+}
+window.addEventListener("load",function(){
+    len(cartData)
+})
+
+
 
 
 
