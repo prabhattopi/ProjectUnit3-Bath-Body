@@ -12,7 +12,10 @@
     <link rel="stylesheet" href="../unit 3 project/style/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://kit.fontawesome.com/1a0e1cf198.js" crossorigin="anonymous"></script>
-   
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,11 +46,50 @@
         </div>
     </div>
 
-    <div id="slishr">
-        
-    </div>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+              <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwdc3685b6/crop/026487363_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="">
+          </div>
+          <div class="swiper-slide">
+              <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw2f53c870/crop/026487385_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="">
+          </div>
+          <div class="swiper-slide">
+              <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw619eba7a/crop/026519763_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="">
+          </div>
+          <div class="swiper-slide">
+              <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw57c95821/hires/025144398_alt_1.jpg?sh=413&yocs=o_s" alt="">
+          </div>
+          <div class="swiper-slide"><img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw5cea3fc1/crop/026480844_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt=""></div>
+          <div class="swiper-slide"><img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwe8bc2c4c/crop/026401902_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt=""></div>
+          <!-- <div class="swiper-slide">Slide 7</div>
+          <div class="swiper-slide">Slide 8</div>
+          <div class="swiper-slide">Slide 9</div> -->
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
     <div id="footermainpagewrapperfun"></div>
 </body>
 </html>
 <script src=".\script\product_details.js"></script>
 <script src="../unit 3 project/index.js" type="module"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+   slidesPerView: 3,
+   spaceBetween: 30,
+   slidesPerGroup: 3,
+   loop: true,
+   loopFillGroupWithBlank: true,
+   pagination: {
+     el: ".swiper-pagination",
+     clickable: true,
+   },
+   navigation: {
+     nextEl: ".swiper-button-next",
+     prevEl: ".swiper-button-prev",
+   },
+ });
+</script>
