@@ -68,7 +68,7 @@ const navbar=()=>{
         /></a>
         <div class="links">
           
-          <div class="search"><input type="text" placeholder="Search"> <span><i class="fa-solid fa-magnifying-glass"></i></span></div>
+          <div class="search"><input type="text" placeholder="Search by fragrance or product or sanitizer or hand..."> <span><i class="fa-solid fa-magnifying-glass"></i></span></div>
           <div class="sign_in"><a href="./Login_SignUp/login.html"><img src="../Images/photo.png" alt=""></a></div>
           <div class="signInForm hide">
             <form id="sign_in">
