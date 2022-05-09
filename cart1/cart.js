@@ -190,7 +190,8 @@ function displayData(cartPagedata) {
         offer1.innerText = elem.discount;
 
         price1.innerText ="$"+Number(elem.price).toFixed(2)
-        price1.style.fontSize = "16px"
+        price1.style.fontSize = "16px";
+        price1.style.marginLeft = "150px"
 
         teachProdTotal.innerText = "$" + (elem.price * parseInt(numberP.innerText)).toFixed(2)
         teachProdTotal.setAttribute("id", "teachProdTotal")
