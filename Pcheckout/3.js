@@ -290,5 +290,7 @@ window.addEventListener("load",function(){
 // document.getElementById("papu").addEventListener("click",()=>{
 //     window.location.href="./3.html"
 // })
-
+document.getElementById("place").addEventListener("click",()=>{
+  window.location.href="../succes/index.html"
+})
 
