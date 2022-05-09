@@ -213,4 +213,15 @@ function pricesort(){
 
     }
 
-    // document.getElementById("")
+    
+
+
+
+
+
+
+
+
+         
+
+    
