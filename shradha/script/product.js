@@ -114,8 +114,8 @@ const getdata = ()=>{
     let data1 = data[data.length-1]
     // console.log(data1)
     let dataa = JSON.parse(localStorage.getItem(`${data1}`))
-    console.log(dataa)
-    console.log(mensData)
+    // console.log(dataa)
+    // console.log(mensData)
     appendData(dataa)
 }
 
