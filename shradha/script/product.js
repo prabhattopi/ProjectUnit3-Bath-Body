@@ -157,16 +157,16 @@ function addtocart(el){
     len(cartData)
 
 }
-let length=cartData.length
-document.getElementById("starlord").innerText=`${length}`
-function len(cartData){
-    document.querySelector("#starlord").innerText=null
-  let length=cartData.length
-  document.querySelector("#starlord").innerText=`${length}`
-}
-window.addEventListener("load",function(){
-    len(cartData)
-})
+// let length=cartData.length
+// document.getElementById("starlord").innerText=`${length}`
+// function len(cartData){
+//     document.querySelector("#starlord").innerText=null
+//   let length=cartData.length
+//   document.querySelector("#starlord").innerText=`${length}`
+// }
+// window.addEventListener("load",function(){
+//     len(cartData)
+// })
 
 
 
@@ -185,7 +185,7 @@ function pricesort(){
     let data1 = data[data.length-1]
     let dataa = JSON.parse(localStorage.getItem(`${data1}`))
     
-    // console.log(dataa)
+     console.log(dataa)
     let selected = document.querySelector("#sort_by").value;
      if (selected == "high"){
 
@@ -207,9 +207,10 @@ function pricesort(){
       }  
 
       
-     //console.log(dataa);
+    // console.log(dataa);
     appendData(dataa)
       
 
     }
 
+    // document.getElementById("")
