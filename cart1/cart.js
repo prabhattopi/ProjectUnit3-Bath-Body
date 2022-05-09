@@ -23,54 +23,54 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 
- let carobj = [
-    {
-        image: "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-master-catalog/default/dwe52c7f04/crop/026403504_crop.jpg?yocs=o_s_",
-        title: "SANDALWOOD EUCALYPTUS MANDARIN",
-        category: "Body Wash and Foam Bath",
-        offer: "Mix & Match: Buy 3, Get 3 Free or Buy 2, Get 1 Free",
-        price: 17.00
-
-    },
-    {
-        image: "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-master-catalog/default/dwe52c7f04/crop/026403504_crop.jpg?yocs=o_s_",
-        title: "SANDALWOOD EUCALYPTUS MANDARIN",
-        category: "Body Wash and Foam Bath",
-        offer: "Mix & Match: Buy 3, Get 3 Free or Buy 2, Get 1 Free",
-        price: 17.00
-
-    }, {
-        image: "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-master-catalog/default/dwe52c7f04/crop/026403504_crop.jpg?yocs=o_s_",
-        title: "SANDALWOOD EUCALYPTUS MANDARIN",
-        category: "Body Wash and Foam Bath",
-        offer: "Mix & Match: Buy 3, Get 3 Free or Buy 2, Get 1 Free",
-        price: 17.00
+//  let carobj = [
+//     {
+//         image: "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-master-catalog/default/dwe52c7f04/crop/026403504_crop.jpg?yocs=o_s_",
+//         title: "SANDALWOOD EUCALYPTUS MANDARIN",
+//         category: "Body Wash and Foam Bath",
+//         offer: "Mix & Match: Buy 3, Get 3 Free or Buy 2, Get 1 Free",
+//         price: 17.00
 
 //     },
-//     // {
-//     //     image: "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-master-catalog/default/dwe52c7f04/crop/026403504_crop.jpg?yocs=o_s_",
-//     //     title: "SANDALWOOD EUCALYPTUS MANDARIN",
-//     //     category: "Body Wash and Foam Bath",
-//     //     offer: "Mix & Match: Buy 3, Get 3 Free or Buy 2, Get 1 Free",
-//     //     price: 17.00
+//     {
+//         image: "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-master-catalog/default/dwe52c7f04/crop/026403504_crop.jpg?yocs=o_s_",
+//         title: "SANDALWOOD EUCALYPTUS MANDARIN",
+//         category: "Body Wash and Foam Bath",
+//         offer: "Mix & Match: Buy 3, Get 3 Free or Buy 2, Get 1 Free",
+//         price: 17.00
 
-//     // },
-//     // {
-//     //     image: "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-master-catalog/default/dwe52c7f04/crop/026403504_crop.jpg?yocs=o_s_",
-//     //     title: "SANDALWOOD EUCALYPTUS MANDARIN",
-//     //     category: "Body Wash and Foam Bath",
-//     //     offer: "Mix & Match: Buy 3, Get 3 Free or Buy 2, Get 1 Free",
-//     //     price: 17.00
+//     }, {
+//         image: "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-master-catalog/default/dwe52c7f04/crop/026403504_crop.jpg?yocs=o_s_",
+//         title: "SANDALWOOD EUCALYPTUS MANDARIN",
+//         category: "Body Wash and Foam Bath",
+//         offer: "Mix & Match: Buy 3, Get 3 Free or Buy 2, Get 1 Free",
+//         price: 17.00
 
-//     // }, {
-//     //     image: "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-master-catalog/default/dwe52c7f04/crop/026403504_crop.jpg?yocs=o_s_",
-//     //     title: "SANDALWOOD EUCALYPTUS MANDARIN",
-//     //     category: "Body Wash and Foam Bath",
-//     //     offer: "Mix & Match: Buy 3, Get 3 Free or Buy 2, Get 1 Free",
-//     //     price: 17.00
+// //     },
+// //     // {
+// //     //     image: "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-master-catalog/default/dwe52c7f04/crop/026403504_crop.jpg?yocs=o_s_",
+// //     //     title: "SANDALWOOD EUCALYPTUS MANDARIN",
+// //     //     category: "Body Wash and Foam Bath",
+// //     //     offer: "Mix & Match: Buy 3, Get 3 Free or Buy 2, Get 1 Free",
+// //     //     price: 17.00
 
- }
- ]
+// //     // },
+// //     // {
+// //     //     image: "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-master-catalog/default/dwe52c7f04/crop/026403504_crop.jpg?yocs=o_s_",
+// //     //     title: "SANDALWOOD EUCALYPTUS MANDARIN",
+// //     //     category: "Body Wash and Foam Bath",
+// //     //     offer: "Mix & Match: Buy 3, Get 3 Free or Buy 2, Get 1 Free",
+// //     //     price: 17.00
+
+// //     // }, {
+// //     //     image: "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-master-catalog/default/dwe52c7f04/crop/026403504_crop.jpg?yocs=o_s_",
+// //     //     title: "SANDALWOOD EUCALYPTUS MANDARIN",
+// //     //     category: "Body Wash and Foam Bath",
+// //     //     offer: "Mix & Match: Buy 3, Get 3 Free or Buy 2, Get 1 Free",
+// //     //     price: 17.00
+
+//  }
+//  ]
 
 // image: "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-master-catalog/default/dwe52c7f04/crop/026403504_crop.jpg?yocs=o_s_",
 //         title: "SANDALWOOD EUCALYPTUS MANDARIN",
@@ -78,7 +78,7 @@ var swiper = new Swiper(".mySwiper", {
 //         offer: "Mix & Match: Buy 3, Get 3 Free or Buy 2, Get 1 Free",
 //         price: 17.00
 
-localStorage.setItem("cart", JSON.stringify(carobj));
+// localStorage.setItem("cart", JSON.stringify(carobj));
 let cartPagedata = JSON.parse(localStorage.getItem("cart")) || [];
 console.log(cartPagedata)
 displayData(cartPagedata)
