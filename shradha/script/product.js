@@ -108,6 +108,9 @@ const appendData =  (data1)=>{
 }
 
 
+
+
+
 const getdata = ()=>{
     let data = JSON.parse(localStorage.getItem("pages"));
     // console.log(data)
