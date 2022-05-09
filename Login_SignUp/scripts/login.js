@@ -1,3 +1,6 @@
+var cartData = JSON.parse(localStorage.getItem("cart"))||[]
+
+
 
 document.getElementById("loginBtn").addEventListener("click", startLogin)
 
@@ -49,7 +52,7 @@ function setToLS(info){
     userDetails.street = street
     userDetails.zipcode = zipcode
 
-    localStorage.setItem("user", JSON.stringify(userDetails))
+    localStorage.setItem("user", JSON.stringify(userDetails));
 
     window.location.href="../index.html"
 }
@@ -57,3 +60,15 @@ function setToLS(info){
 document.getElementById("createAccount").addEventListener("click", function(){
     window.location.href = "signup.html";
 });
+
+// prabhat js code
+let length=cartData.length
+document.getElementById("starlord").innerText=`${length}`
+function len(cartData){
+    document.querySelector("#starlord").innerText=null
+  let length=cartData.length
+  document.querySelector("#starlord").innerText=`${length}`
+}
+window.addEventListener("load",function(){
+    len(cartData)
+})
